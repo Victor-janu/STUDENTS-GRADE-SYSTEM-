@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    cout << "Welcome to the Student Grading System!" << endl;
+
+    string studentName;
+    int marks;
+
+    cout << "\nEnter the student's name: ";
+    cin >> studentName;
+    cout << "Enter the student's marks (0-100): ";
+    cin >> marks;
+
+    char grade;
+    if (marks >= 70 && marks <= 100) {
+        grade = 'A';
+    } else if (marks >= 50 && marks < 70) {
+        grade = 'B';
+    } else if (marks >= 40 && marks < 50) {
+        grade = 'C';
+    } else if (marks >= 30 && marks < 40) {
+        grade = 'D';
+    } else {
+        grade = 'F';
+    }
+    cout << "\nGrade for " << studentName << ": " << grade << endl;
+
+    return 0;
+}
