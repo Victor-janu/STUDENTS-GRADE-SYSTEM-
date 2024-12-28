@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    cout << "Welcome to the Student Grading System!" << endl;
+    
+    string studentName;
+    int marks;
+
+    cout << "\nEnter the student's name: ";
+    cin >> studentName;
+    cout << "Enter the student's marks (0-100): ";
+    cin >> marks;
+
+    cout << "\nProcessing the grade for " << studentName << "..." << endl;
+
+    return 0;
+}
